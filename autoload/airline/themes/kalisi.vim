@@ -5,14 +5,14 @@
 " 24.10.2014 
  
 " Visual mode                                   
-let s:V1 = [ '#0087ff' , '#ffffff','33','231']
-let s:V2 = [ '#005faf' , '#5fafff','25','75']
-let s:V3 = [ '#87d7ff' , '#005faf','117','25']
+let s:I1 = [ '#0087ff' , '#ffffff','33','231']
+let s:I2 = [ '#005faf' , '#5fafff','25','75']
+let s:I3 = [ '#87d7ff' , '#005faf','117','25']
 
 " Replace mode
-let s:R1 = [ '#d75fff' , '#ffffff','171','231']
-let s:R2 = [ '#5f005f' , '#d75fff','53','171']
-let s:R3 = [ '#ff87ff' , '#8700af','213','91']
+let s:N1 = [ '#d75fff' , '#ffffff','171','231']
+let s:N2 = [ '#5f005f' , '#d75fff','53','171']
+let s:N3 = [ '#ff87ff' , '#8700af','213','91']
 
 let g:airline#themes#kalisi#palette = {}
 
@@ -23,14 +23,14 @@ function! airline#themes#kalisi#refresh()
   let s:StatusLineNC = airline#themes#get_highlight('StatusLineNC')
 
   " Insert mode                                    
-  let s:I1 = [ '#ffffff' , '#e80000','231','160']
-  let s:I2 = [ '#ff0000' , '#5f0000','196','52']
-  let s:I3 = s:StatusLine
+  let s:V1 = [ '#ffffff' , '#e80000','231','160']
+  let s:V2 = [ '#ff0000' , '#5f0000','196','52']
+  let s:V3 = s:StatusLine
 
   " Normal mode
-  let s:N1 = [ '#005f00' , '#afd700','22','148'] 
-  let s:N2 = [ '#afd700' , '#005f00','148','22'] 
-  let s:N3 = s:StatusLine
+  let s:R1 = [ '#005f00' , '#afd700','22','148'] 
+  let s:R2 = [ '#afd700' , '#005f00','148','22'] 
+  let s:R3 = s:StatusLine
 
   " Tabline Plugin
   let g:airline#themes#kalisi#palette.tabline = {
