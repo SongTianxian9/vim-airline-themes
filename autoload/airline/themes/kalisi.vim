@@ -43,9 +43,9 @@ function! airline#themes#kalisi#refresh()
         \ 'airline_tabmod_unsel':  ['#d7ff00', '#005f00','190','22']
         \ }
 
-  let g:airline#themes#kalisi#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
+  let g:airline#themes#kalisi#palette.insert = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
   let g:airline#themes#kalisi#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)
-  let g:airline#themes#kalisi#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)
+  let g:airline#themes#kalisi#palette.normal = airline#themes#generate_color_map(s:I1, s:I2, s:I3)
   let g:airline#themes#kalisi#palette.replace = airline#themes#generate_color_map(s:R1, s:R2, s:R3)
 
   " Inactive Mode
